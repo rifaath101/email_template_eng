@@ -4,8 +4,27 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
     <title>Eng Email Template</title>
     <style type="text/css">
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        .dark-btn {
+          background: #fff !important;
+        }
+        .pay-text-dark {
+          color: #000000 !important;
+        }
+        .main-dark {
+          background-color: black !important;
+          color: white !important;
+        }
+      }
+
       body {
         margin: 0;
         background-color: #cccccc;
@@ -60,7 +79,6 @@
         border: none;
       }
       .pay-text {
-        font-family: "Helvetica Neue";
         color: #fff;
         font-weight: 400;
         font-size: 20px;
@@ -72,7 +90,7 @@
       }
       .question {
         font-weight: 700;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 28px;
       }
       .text-2 {
@@ -106,10 +124,9 @@
       }
       .img {
         width: 204px;
-        height: 356px;
+        height: 329px;
       }
       .address {
-        font-family: "Helvetica Neue";
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
@@ -119,10 +136,13 @@
   </head>
   <body>
     <center class="wrapper">
-      <table class="main" width="100%">
+      <table class="main main-dark" width="100%">
         <tr>
           <td style="background-color: #cdc5e1">
-            <img src="./img/Header.svg" alt="" style="max-width: 100%" />
+            <img
+              src="./img/final_header_eng.svg"
+              alt=""
+              style="max-width: 100%" />
           </td>
         </tr>
 
@@ -138,8 +158,8 @@
 
         <tr>
           <td style="padding: 60px">
-            <button class="btn">
-              <p class="pay-text">Pay SAR 00 and Complete Order</p>
+            <button class="btn dark-btn">
+              <p class="pay-text pay-text-dark">Check out easily now</p>
             </button>
           </td>
         </tr>
@@ -159,8 +179,10 @@
                           Discover new stores, split your payments, and collect
                           exclusive offers with the Farah program!
                         </p>
-                        <button class="btn-2">
-                          <p class="download-text">Download the app</p>
+                        <button class="btn-2 dark-btn">
+                          <p class="download-text pay-text-dark">
+                            Download the app
+                          </p>
                         </button>
                       </td>
                     </tr>
