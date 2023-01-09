@@ -49,98 +49,32 @@
         padding: 0;
         margin: 0;
       }
-      .wrapper {
-        width: 100%;
-        table-layout: fixed;
-        background-color: #cccccc;
-        padding-bottom: 60px;
-      }
-      .main {
-        background-color: #fff;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 600px;
-        font-family: Tahoma, sans-serif;
-        color: #171a1b;
-      }
-      .title {
-        font-size: 24 !important;
-        font-weight: 700;
-      }
-      .text {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
-      }
-      .btn {
-        border-radius: 12px;
-        align-items: center;
-        padding: 20px 40px;
-        background: #000000;
-        border: none;
-      }
-      .pay-text {
-        color: #fff;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
-        text-align: center;
-      }
-      .table {
-        background: #21aeef1a;
-        border-radius: 18px;
-      }
-      .question {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 28px;
-      }
-      .text-2 {
-        width: 250px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        margin-top: 16px;
-      }
-      .btn-2 {
-        padding: 12px 24px;
-        padding-left: 0;
-        padding-right: 0;
-        width: 161px;
-        background: #000000;
-        border-radius: 8px;
-        margin-top: 24px;
-        border: none;
-      }
-      .download-text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        color: #fff;
-        align-items: center;
-        text-align: center;
-      }
       .two-columns .column {
         width: 100%;
         max-width: 300px;
         display: inline-block;
         vertical-align: top;
       }
-      .img {
-        width: 204px;
-        height: 288px;
-      }
-      .address {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        color: #ffffff;
-      }
     </style>
   </head>
   <body>
-    <center class="wrapper">
-      <table class="main main-dark" width="100%">
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #cccccc;
+        padding-bottom: 60px;
+      ">
+      <table
+        class="main-dark"
+        style="
+          background-color: #fff;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 600px;
+          font-family: Tahoma, sans-serif;
+          color: #171a1b;
+        ">
         <tr>
           <td style="background-color: #cdc5e1">
             <img
@@ -152,8 +86,16 @@
 
         <tr>
           <td style="padding: 40px 32px 20px">
-            <h2 class="title">Hey, *|customerName|*!</h2>
-            <p style="padding-top: 16px" class="text">
+            <h2 style="font-size: 24; font-weight: 700">
+              Hey, *|customerName|*!
+            </h2>
+            <p
+              style="
+                padding-top: 16px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+              ">
               Your order from *|merchantName|* with a total value of SAR
               *|total|* has been created, and is pending until payment is
               completed.
@@ -164,8 +106,27 @@
         <tr>
           <td style="padding: 60px">
             <a href="paymentLink" target="_blank" style="text-decoration: none">
-              <div class="btn dark-btn" style="cursor: pointer">
-                <p class="pay-text pay-text-dark">Check out easily now</p>
+              <div
+                class="dark-btn"
+                style="
+                  cursor: pointer;
+                  border-radius: 12px;
+                  align-items: center;
+                  padding: 20px 40px;
+                  background: #000000;
+                  border: none;
+                ">
+                <p
+                  class="pay-text-dark"
+                  style="
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                  ">
+                  Check out easily now
+                </p>
               </div>
             </a>
           </td>
@@ -173,18 +134,37 @@
 
         <tr style="width: 100%">
           <td style="padding: 20px 32px">
-            <table class="table table-dark" style="width: 537px; height: 324px">
+            <table
+              class="table-dark"
+              style="
+                width: 537px;
+                height: 324px;
+                background: #21aeef1a;
+                border-radius: 18px;
+              ">
               <tr>
                 <td class="two-columns" style="display: flex">
                   <table class="column">
                     <tr>
                       <td style="padding: 40px 46.22px 66px 32px">
-                        <h3 class="question">
+                        <h3
+                          style="
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 28px;
+                          ">
                           Still haven’t
                           <br />
                           downloaded our app?
                         </h3>
-                        <p class="text-2">
+                        <p
+                          style="
+                            width: 250px;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 26px;
+                            margin-top: 16px;
+                          ">
                           Discover new stores, split your payments, and collect
                           exclusive offers with the Farah program!
                         </p>
@@ -192,8 +172,29 @@
                           href="https://tamara.co/en/app.html"
                           target="_blank"
                           style="text-decoration: none">
-                          <div class="btn-2 dark-btn" style="cursor: pointer">
-                            <p class="download-text pay-text-dark">
+                          <div
+                            class="dark-btn"
+                            style="
+                              cursor: pointer;
+                              padding: 12px 24px;
+                              padding-left: 0;
+                              padding-right: 0;
+                              width: 161px;
+                              background: #000000;
+                              border-radius: 8px;
+                              margin-top: 24px;
+                              border: none;
+                            ">
+                            <p
+                              class="pay-text-dark"
+                              style="
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #fff;
+                                align-items: center;
+                                text-align: center;
+                              ">
                               Download the app
                             </p>
                           </div>
@@ -207,7 +208,7 @@
                         <img
                           src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/75be375e-6118-7388-d8e1-d7eaddc37104.png"
                           alt=""
-                          class="img" />
+                          style="width: 204px; height: 288px" />
                       </td>
                     </tr>
                   </table>
@@ -229,7 +230,15 @@
                           src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/96ef0fc8-ac60-293a-aace-9d94fa460db9.png"
                           alt=""
                           style="margin-bottom: 24px" />
-                        <p class="address" style="width: 357px">
+                        <p
+                          class="address"
+                          style="
+                            width: 357px;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #ffffff;
+                          ">
                           Nakhla IT Systems LLC, 6901 At Takhassusi Branch
                           Street, Al Rahmaniyah District Riyadh, Saudi Arabia.
                         </p>
@@ -238,13 +247,30 @@
                             href="https://tamara.co/en/terms-and-conditions.html"
                             target="_blank"
                             style="text-decoration: none">
-                            <p class="address">Terms & Conditions</p>
+                            <p
+                              class="address"
+                              style="
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #ffffff;
+                              ">
+                              Terms & Conditions
+                            </p>
                           </a>
                           <a
                             href="https://cdn.tamara.co/static/faq-en.html"
                             target="_blank"
                             style="text-decoration: none">
-                            <p class="address" style="margin-left: 26px">
+                            <p
+                              class="address"
+                              style="
+                                margin-left: 26px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #ffffff;
+                              ">
                               FAQs
                             </p>
                           </a>
@@ -252,7 +278,15 @@
                             href="https://support.tamara.co/hc/en-us"
                             target="_blank"
                             style="text-decoration: none">
-                            <p class="address" style="margin-left: 26px">
+                            <p
+                              class="address"
+                              style="
+                                margin-left: 26px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #ffffff;
+                              ">
                               Help center
                             </p>
                           </a>
