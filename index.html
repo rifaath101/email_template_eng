@@ -4,30 +4,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="supported-color-schemes" content="light dark" />
+
     <title>Eng Email Template</title>
     <style type="text/css">
-      :root {
-        color-scheme: light dark;
-        supported-color-schemes: light dark;
-      }
-      @media (prefers-color-scheme: dark) {
-        .dark-btn {
-          background: #fff !important;
-        }
-        .pay-text-dark {
-          color: #000000 !important;
-        }
-        .main-dark {
-          background-color: black !important;
-          color: white !important;
-        }
-        .table-dark {
-          background-color: #1c2a3a !important;
-        }
-      }
-
       body {
         margin: 0;
         background-color: #cccccc;
@@ -54,6 +33,12 @@
         max-width: 300px;
         display: inline-block;
         vertical-align: top;
+      }
+
+      @media only screen and (max-width: 480px) {
+        .title {
+          font-size: 28px;
+        }
       }
     </style>
   </head>
@@ -86,8 +71,9 @@
 
         <tr>
           <td style="padding: 40px 32px 20px">
-            <h2 style="font-size: 24; font-weight: 700">
-              Hey, *|customerName|*!
+            <h2 style="font-size: 24; font-weight: 700" class="title">
+              *|IF:customerName=noName|* Hey, there! *|ELSE:|* Hey,
+              *|customerName|*! *|END:IF|*
             </h2>
             <p
               style="
@@ -96,16 +82,19 @@
                 font-size: 18px;
                 line-height: 26px;
               ">
-              Your order from *|merchantName|* with a total value of SAR
-              *|total|* has been created, and is pending until payment is
-              completed.
+              Your order from *|merchantName|* with a total value of
+              *|currency|* *|total|* has been created, and is pending until
+              payment is completed.
             </p>
           </td>
         </tr>
 
         <tr>
           <td style="padding: 60px">
-            <a href="paymentLink" target="_blank" style="text-decoration: none">
+            <a
+              href="*|paymentLink|*"
+              target="_blank"
+              style="text-decoration: none">
               <div
                 class="dark-btn"
                 style="
@@ -228,8 +217,9 @@
                     <tr>
                       <td style="padding: 40px 32px">
                         <img
-                          src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/96ef0fc8-ac60-293a-aace-9d94fa460db9.png"
+                          src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/f08d9c7d-51be-42b6-6123-301255e059ea.png"
                           alt=""
+                          width="80px"
                           style="margin-bottom: 24px" />
                         <p
                           class="address"
@@ -238,7 +228,7 @@
                             font-weight: 400;
                             font-size: 14px;
                             line-height: 22px;
-                            color: #ffffff;
+                            color: white;
                           ">
                           Nakhla IT Systems LLC, 6901 At Takhassusi Branch
                           Street, Al Rahmaniyah District Riyadh, Saudi Arabia.
@@ -254,7 +244,7 @@
                                 font-weight: 400;
                                 font-size: 14px;
                                 line-height: 22px;
-                                color: #ffffff;
+                                color: #fff;
                               ">
                               Terms & Conditions
                             </p>
@@ -270,7 +260,7 @@
                                 font-weight: 400;
                                 font-size: 14px;
                                 line-height: 22px;
-                                color: #ffffff;
+                                color: #fff;
                               ">
                               FAQs
                             </p>
@@ -286,7 +276,8 @@
                                 font-weight: 400;
                                 font-size: 14px;
                                 line-height: 22px;
-                                color: #ffffff;
+                                color: #fff;
+                                box-shadow: 18px black;
                               ">
                               Help center
                             </p>
@@ -309,7 +300,7 @@
                           <img
                             height="24px"
                             width="24px"
-                            src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/9222e952-9e0a-261f-584d-b4372b1d2212.png"
+                            src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/3020b978-b42f-c0be-7e18-135f17d74c06.png"
                             alt=""
                             style="margin-right: 27.78px" />
                         </a>
@@ -319,7 +310,7 @@
                           <img
                             width="24px"
                             height="24px"
-                            src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/9ef4bf3c-ebb6-8424-f827-6eb4377c3fba.png"
+                            src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/5866daef-f814-a996-7eb4-1e3e69a4f2be.png"
                             alt=""
                             style="margin-right: 27.78px" />
                         </a>
@@ -329,7 +320,7 @@
                           <img
                             width="24px"
                             height="24px"
-                            src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/326253a9-1820-de48-4b43-673837e220ad.png"
+                            src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/5516b897-0be5-6c06-f869-3c1e3229e551.png"
                             alt="" />
                         </a>
                       </td>
